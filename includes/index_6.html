@@ -1,0 +1,171 @@
+<section>
+	<h1>Kommentare</h1>
+</section>
+
+<section>
+	<h2>Kommentare</h2>
+
+	<ul>
+		<li>Programme werden schnell unübersichtlich.</li>
+		<li>Jeder Programmiert anders, was dazu führt, dass das Programm eines anderen schwer zu verstehen sein kann.</li>
+		<li>Oft ist bei Variablen nicht klar, für was diese stehen.</li>
+		<pre><code>public class Kommentare {
+    public static void main(String[] args) {
+        int a = 20; 
+    }
+}
+</code></pre>
+	<li>Was wird in "a" gespeichert?</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Kommentare</h2>
+
+	<ul>
+		<li>All diese Probleme werden durch Kommentare gelöst!</li>
+		<pre><code>public class Kommentare {
+    public static void main(String[] args) {
+        // a ist das Alter der Nutzers
+        int a = 20; 
+    }
+}
+</code></pre>
+		<li>Dadurch wird der Quellcode verständlicher.</li>
+		<li>Kommentare ändern nichts am Ablauf des Programms. Sie sind nur für den Programmierer zum Verständnis da.</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Kommentare - Einzeilig</h2>
+	<ul>
+		<li>Einzeilige Kommentar beginnen mit "//".</li>
+		<li>Alles, dass nach "//" kommt wird nicht vom Compiler ausgewertet und verändert den Programmfluss nicht.</li>
+		<li>Meistens wird mit einzeiligen Kommentaren die nächste Zeile erklärt.</li>
+		<pre><code>public class EinzeiligerKommentar {
+    public static void main(String[] args) { 
+        // Das ist ein einzeiliger Kommentar 
+        // In der nächsten Zeile wird ein Text ausgegeben 
+        System.out.println("Hallo Welt"); 
+        // Auch hier steht ein Kommentar 
+    }
+}</code></pre>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Kommentare - Mehrzeilig</h2>
+	<ul>
+		<li>>Kommentare über mehrere Zeilen beginnen mit "/*" und enden mit "*/".</li>
+		<li>Eclipse schreibt an den Anfang  jeder Zeile dazwischen ein "*".</li>
+		<li>Wird für längere Kommentare benutzt.</li>
+			<pre><code>public class EinzeiligerKommentar {
+    /*
+    * Dies ist ein mehrzeiliger Kommentar.
+    * Das Programm gibt "Hallo Welt!" auf der Konsole aus.
+    */
+    public static void main(String[] args) { 
+        System.out.println("Hallo Welt"); 
+    }
+}</code></pre>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Kommentare - Mehrzeilig</h2>
+	<pre><code>public class Rechner { 
+    /* 
+    * Dieses Programm berechnet die Stunden pro Woche 
+    * Das Ergebnis soll am Ende ausgegeben werden 
+    */ 
+    public static void main(String[] args) { 
+        // Anzahl Stunden pro Tag 
+        int stunden = 24; 
+        // Anzahl Tage pro Woche 
+        int tage = 7; 
+        // Berechnung Stunden pro Woche 
+        int ergebnis = stunden * tage; 
+        // Ausgabe: Anzahl Stunden pro Woche 
+        System.out.println("Anzahl Stunden pro Woche: " + ergebnis); 
+    } 
+}
+</code></pre>
+</section>
+
+<section>
+	<h2>Aufgabe 12 - "Kommentar I"</h2>
+	<ul>
+		<li>Erstelle ein mit leerer main-Methode (also ohne Funktionalität).</li>
+		<li>Schreibe über dies Klasse mit einzeiligen Kommentare deinen Namen und das Datum!</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Aufgabe 12 - "Kommentar I"<br>(Lösung)</h2>
+
+	<pre><code>// Name:  Max Mustermann
+// Datum: 01.05.2020
+class Aufgabe12 {
+    public static void main(String[] args) {
+    
+    }
+}</code></pre>
+
+</section>
+
+<section>
+	<h2>Aufgabe 13 - "Kommentar II"</h2>
+
+	<ul>
+		<li>Ersetze die zwei einzeiligen Kommentare aus Aufgabe 12 mit einem mehrzeiligen Kommentar!</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Aufgabe 13 - "Kommentar II"<br>(Lösung)</h2>
+
+<pre><code>/*
+*  Name:  Max Mustermann
+*  Datum: 01.05.2020
+*/
+class Aufgabe13 {
+    public static void main(String[] args) {
+    
+    }
+}</code></pre>
+</section>
+
+<section>
+	<h2>Aufgabe 14 - "Kommentar III"</h2>
+
+	<ul>
+		<li>Wir wollen ein Programm schreiben, welches die Temperatur von Celsius in Fahrenheit umrechnet.</li>
+		<li>Erstelle dazu zwei Variablen (celsius und fahrenheit) vom Typ double und initialisiere celsius mit einem beliebigen Wert.</li>
+		<li>Gibt die Temperatur in Fahrenheit auf der Konsole aus.</li>
+		<li><strong>Kommentiere das Programm passend!</strong></li>
+		<li>Die Formel zur Umrechnung lautet:<br><br><i>fahrenheit = celsius * 1.8 + 32</i></li>
+	</ul>
+</section>
+
+<section>
+
+	<h2>Aufgabe 14 - "Kommentar III"</h2>
+	<pre><code>/*
+*  Name:  Max Mustermann
+*  Datum: 01.05.2020
+*/
+class Aufgabe14 {
+    public static void main(String[] args) {
+        //Variable für Temperatur in Celsius 
+        double celsius = 23; 
+        //Variable für Temperatur in Fahrenheit 
+        double fahrenheit = celsius * 1.8 + 32;
+        //Ausgabe des Ergebnisses auf der Konsole 
+        System.out.println("Temperatur in Fahrenheit: " + fahrenheit);
+    }
+}</code></pre>
+</section>

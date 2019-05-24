@@ -1,0 +1,104 @@
+.reveal .slides {
+  font-size: 2.0vw;
+}
+
+.reveal h1 {
+  text-align: center;
+  padding: 1.5em;
+  font-size: 3.5em;
+  text-transform: none;
+}
+.reveal h2 {
+  text-align: left;
+  font-size: 1.8em;
+  text-transform: none;
+  position: relative;
+  left:8%;
+} 
+
+.reveal ul {
+  float:left;
+  width: 75%;
+  position: relative;
+  left:8%;
+  top:1em;
+}
+
+.reveal ol {
+  font-size:0.9em;
+}
+
+.reveal li {
+  align-content: left;
+  font-size: 1em;
+  margin:0.5em;
+  line-height: 0.9em;
+}
+
+.reveal ul ul li {
+  font-size: 0.9em;
+}
+
+.reveal ul ul {
+  top:0em;
+  left:0%;
+}
+
+.reveal code {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  width:80%;
+  class:java;
+}
+
+.reveal pre {
+  position: relative;
+  left:5%;
+  top:2em;
+  display: inline
+}
+.reveal ul pre {
+  top:0em;
+}
+
+.reveal ul pre code {
+  width:90%;
+}
+
+.reveal svg {
+  version: 1.1;
+  xmlns: "http://www.w3.org/2000/svg";
+  baseProfile: "full";
+  position: absolute;
+}
+
+.reveal p {
+  position: relative;
+  text-align:left
+  font-size: 1.3em;
+}
+
+.reveal section img {
+  position: relative;
+  left:5%;
+  border: 0px solid #222;
+  max-width: 1000%;
+  max-height: 1000%;
+}
+
+.reveal td {
+  padding: 11px;
+  border: 5px solid black;
+}
+
+.reveal tr {
+  padding: 11px;
+  border: 5px solid black;
+}
+.reveal table {
+  position: relative;
+  padding: 11px;
+  border: 5px solid black;
+  font-size: 0.9em;
+  float:left;
+}

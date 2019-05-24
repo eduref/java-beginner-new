@@ -1,0 +1,243 @@
+<section>
+	<h1>Arithmetische Operationen</h1>
+</section>
+
+			
+<section>
+	<h2>Arithmetische Operationen</h2>
+	<ul>
+		<li>Welche arithmetischen Operationen kennt ihr?</li>
+		<ul>
+			<li class="fragment" data-fragment-index="0">Addition (+)</li>
+			<li class="fragment" data-fragment-index="0">Subtraktion (-)</li>
+			<li class="fragment" data-fragment-index="0">Multiplikation (*)</li>
+			<li class="fragment" data-fragment-index="0">Division (/)</li>						
+		</ul>
+		<br><br><br><br>
+		<li class="fragment" data-fragment-index="1">Zusätzlich gibt es in Java noch den modulo Operator (%).</li>		
+		<ul>
+			<li class="fragment" data-fragment-index="1">Dieser berechnet den Rest einer Ganzzahldivision.</li>
+		</ul>
+		<br>
+		<div class="fragment" data-fragment-index="1">
+		<p style="left:2em;"><i>
+			11 / 3 = 3 Rest 2
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    
+			11 % 3 = 2
+		</i></p>
+		<svg height="40" width="5em" style="bottom:0.7em; left:11em" transform="rotate(180)">
+			<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+			<polygon fill="black" points="0,20 30,5 30,35"/>
+		</svg>
+		</div>
+	</ul>
+</section>
+
+<section>
+	<h2>Arithmetische Operationen - "Beispiel"</h2>	
+	<ul>
+		<li>Addition in Java</li>
+		<pre><code>int ergebnis = 4 + 5;</code></pre>
+		<br><br><br>
+		<svg height="40" width="5em" style="bottom:7em; left:3em" transform="rotate(120)">
+			<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+			<polygon fill="black" points="0,20 30,5 30,35"/>
+		</svg>
+		
+		<svg height="40" width="5em" style="bottom:7em; left:11.5em" transform="rotate(60)">
+			<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+			<polygon fill="black" points="0,20 30,5 30,35"/>
+		</svg>
+		<p style="left:-2em">Variable für das Ergebnis</p>
+		<p style="left:10em; top:-1.8em">Die eigentliche Rechnung</p>
+		<li>Das Ergebnis der Rechnung wird in die Variable ergebnis geschrieben.</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Arithmetische Operationen - "Beispiel"</h2>
+
+	<ul>
+		<li>Die anderen Operatoren funktionieren auf die gleiche Weise.</li>
+		<ul>
+			<li>Subtraktion</li>
+			<pre><code>int ergebnis = 4 - 5;</code></pre>
+			<li>Multiplikation</li>
+			<pre><code>int ergebnis = 4 * 5;</code></pre>
+			<li>Division</li>
+			<pre><code>int ergebnis = 4 / 5;</code></pre>
+			<li>Modulo</li>
+			<pre><code>int ergebnis = 4 % 5;</code></pre>
+		</ul>	
+	</ul>
+
+</section>
+
+<section>
+	<h2>Aufgabe 9 - "Kalkulation I"</h2>
+
+	<ul>
+		<li>Schreibe ein Programm, dass folgenden Ausdruck berechnet!</li>
+		<p>6.2∗34.7+60.4/98.5−15.0</p>
+	</ul>
+
+</section>
+
+<section>
+    <h2>Aufgabe 9 - "Kalkulation I"<br>(Lösung)</h2>
+  
+        <pre><code>public class Aufgabe9{ 
+    public static void main(String[] args){
+        double ergebnis = 6.2*34.7+60.4/98.5-15.0;
+        System.out.println(ergebnis);
+        //oder
+        System.out.println(6.2*34.7+60.4/98.5-15.0);
+    } 
+}
+</code></pre>
+
+	<ul>
+        <li>Ergebnis: 200.75319796954315</li>
+    </ul>
+
+</section>
+
+<section>
+	<h2>Arithmetische Operationen</h2>
+
+	<ul>
+		<li>Man kann auch mit Variablen rechnen.</li>
+		<pre><code>int ergebnis;
+int zahl1 = 4;
+int zahl2 = 5;
+ergebnis = zahl1 * zahl2 + 5;</code></pre>
+		<li>Variablen können auch neue Werte zugewiesen bekommen.</li>
+		<pre><code>int zahl = 5;
+zahl = 4;</code></pre>
+	</ul>
+	
+</section>
+
+<section>
+	<h2>Aufgabe 10 - "Kalkulation II"</h2>
+	<ul>
+		<li>Schreibe ein Programm, dass den BMI berechnet.</li>
+		<li>Deklariere eine Integer Variablen für Körpergewicht und eine Double Variable für Körpergröße und speichere darin deine Werte.</li>
+		<li>Berechne mit den beiden werten deinen BMI und gebe ihn auf der Konsole aus.</li>
+		<br>
+		<li>Benutze dafür folgende Formel:<br><br>BMI = Körpergröße in m / (Körpergewicht in kg)²</li>
+		<br>
+		<li>Hinweis:<br><br>Zahl² = Zahl * Zahl</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Aufgabe 10 - "Kalkulation II"<br>(Lösung)</h2>
+    <pre><code>public class Aufgabe10{ 
+    public static void main(String[] args){
+        double körpergewicht, körpergröße, bmi;
+        körpergewicht = 85;
+        körpergröße = 1.80;
+        bmi =  körpergröße / (körpergewicht * körpergewicht);
+        System.out.println(bmi);
+    } 
+}
+</code></pre>
+
+</section>
+
+<section>
+	<h2>Arithmetische Operationen - Variablentausch</h2>
+	<ul>
+		<li>Vorsicht beim Tauschen der Werte von Variablen!</li>
+		<p>Variable1 
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		Variable2</p>
+		<pre ><code>int zahl1 = 10;
+int zahl2 = 20;
+zahl1 = zahl2;
+zahl2 = zahl1;</code></pre>
+		<img class="fragment" data-fragment-index="0" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/959409/images/5532318/pasted-from-clipboard.png">
+
+		<li class="fragment" data-fragment-index="1">Hat jemand eine Idee wie man vorgehen könnte?</li>
+	</ul>
+	<svg height="40" width="5em" style="bottom:15.2em; left:11em" transform="rotate(0)">
+		<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+		<polygon fill="black" points="0,20 30,5 30,35"/>
+	</svg>
+	<svg height="40" width="5em" style="bottom:14.7em; left:12em" transform="rotate(180)">
+		<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+		<polygon fill="black" points="0,20 30,5 30,35"/>
+	</svg>
+</section>
+
+<section>
+	<h2>Arithmetische Operationen - Variablentausch</h2>
+
+	<ul>
+		<li>Mögliche Lösung: Benutzen einer temporärer Variable.</li>
+	</ul>
+	
+	<svg height="11em" style="top:7.8em; left:50%">
+		<line stroke="black" stroke-width="3" x1="0" y1="0%" x2="0" y2="100%"/>
+	</svg>
+	
+	<p style="position: absolute; top:7em; left:7.9em">Vorstellung</p>
+
+	<p style="position: absolute; top:7em; left:30em">Im Code</p>
+
+<pre style="left:50em; top:10em;"><code style="width:30%;" class="fragment" data-fragment-index="3">int zahl1 = 10;
+int zahl2 = 20;
+int temporäreVariable;
+
+temporäreVariable = zahl1;
+zahl1 = zahl2;
+zahl2 = temporäreVariable;</code></pre>
+
+	<p style="color:#0000CD; position: absolute; top:10em; left:4em">Zahl1</p>
+	<p style="color:#0000CD; position: absolute; top:10em; left:15em">Zahl2</p>
+	<p style="color:#0000CD; position: absolute; top:16em; left:7em">temporäre Variable</p>
+
+	<svg height="40" width="5em" style="bottom:1.6em; left:8em" transform="rotate(0)" class="fragment" data-fragment-index="1"> 
+		<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+		<polygon fill="black" points="0,20 30,5 30,35"/>
+	</svg>
+	<svg height="40" width="5em" style="bottom:-1.5em; left:12em" transform="rotate(120)" class="fragment" data-fragment-index="2">
+		<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+		<polygon fill="black" points="0,20 30,5 30,35"/>
+	</svg>
+	<svg height="40" width="5em" style="bottom:-1.5em; left:4em" transform="rotate(-120)" class="fragment" data-fragment-index="0">
+		<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+		<polygon fill="black" points="0,20 30,5 30,35"/>
+	</svg>
+</section>
+
+<section>
+	<h2>Aufgabe 11 - "Variablentausch"</h2>
+
+	<ul>
+		<li>Dir ist beim überprüfen des Programms aus Aufgabe 10 aufgefallen, dass du in der Formel Körpergröße und Körpergewicht vertauscht hast.</li>
+		<li>Eigentlich müsste die Formel folgendermaßen aussehen:<br><br><i>BMI = Körpergewicht in kg / (Körpergröße in m)²</i></li>
+		<br>
+		<li>Korrigiere nicht die Formel, sondern führe einen Variablentausch durch, um dies zu korrigieren!</li>
+	</ul>
+</section>
+
+<section>
+    <h2>Aufgabe 11 - "Variablentausch"<br>(Lösung)</h2>
+    <pre><code height="150%">public class Aufgabe11{ 
+    public static void main(String[] args){        
+        double körpergröße, körpergewicht, bmi, temporäreVariable;
+        körpergewicht = 85;
+        körpergröße = 1.80;
+        
+        temporäreVariable = körpergewicht;
+        körpergewicht = körpergröße;
+        körpergröße = temporäreVariable;
+
+        bmi =  körpergröße / (körpergewicht * körpergewicht);
+        System.out.println(bmi);
+    } 
+}
+</code></pre>
+</section>

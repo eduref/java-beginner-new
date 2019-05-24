@@ -1,0 +1,172 @@
+<section>
+	<h1>Scanner</h1>
+</section>
+<section>
+	<h2>Scanner</h2>
+
+	<ul>
+		<li>Bisher mussten wird den Variablen alle Werte beim Programmieren zuweisen.</li>
+		<li>Jetzt wollen wir Werte (Strings und Zahlen) von der Tastatur einlesen.</li>
+		<li>Dafür benutzen wir einen Scanner.</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Scanner - Im Code</h2>
+
+	<ul>
+		<li>Zuerst müssen wir den Scanner importieren.</li>
+		<li>Dafür muss folgende Zeile über der Klasse stehen:</li>
+		<pre><code>import java.util.Scanner;
+</code></pre>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Scanner - Im Code</h2>
+
+	<ul>
+		<li>Dann müssen wir einen Scanner erzeugen.</li>
+		<li>Es wird nur ein Scanner pro Programm benötigt.</li>
+		<li>Dafür benötigen wir folgende Zeile:</li>
+		<pre><code>Scanner meinScanner = new Scanner(System.in); </code></pre>
+	</ul>
+	<svg height="40" width="5em" style="bottom:-3.1em; left:12em" transform="rotate(90)">
+		<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+		<polygon fill="black" points="0,20 30,5 30,35"/>
+	</svg>
+	<p style="bottom:-12em; left:-29em">frei wählbar</p>
+
+</section>
+
+<section>
+	<h2>Scanner - Verwendung</h2>
+
+	<ul>
+		<li>Über den Namen unseres Scanners (hier: meinScanner) können Zahlen und Texte eingelesen werden.</li>
+		<li>Befehl zum Einlesen von Strings (Text):</li>
+		<pre><code>meinScanner.next();</code></pre>
+		<li>Befehl zum Einlesen von Integer (Ganzzahl):</li>
+		<pre><code>meinScanner.nextInt();</code></pre>
+		<li>Eingelesen Werte sollten in Variablen gespeichert werden. Ansonsten gehen die Werte verloren.</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Scanner - Beispiel</h2>
+	<pre><code>import java.util.Scanner;
+
+public class ScannerBeispiel {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in); 
+        System.out.println("Bitte Namen eingeben!");
+    
+        //Lesen eines Namens von der Tastatur 
+        String name = scanner.next();
+
+        System.out.println("Name: " + name);
+    }
+}</code></pre>
+
+</section>
+
+<section>
+	<h2>Aufgabe 15 - "Scanner I"</h2>
+
+	<ul>
+		<li>Schreibe ein Programm, welches einen Scanner erstellt.</li>
+		<li>Erstelle zwei passende Variablen name und alter.</li>
+		<li>Lies mithilfe des Scanners den Namen und das Alter des Benutzers ein.</li>
+		<li>Gib Namen und Alter auf der Konsole aus.</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Aufgabe 15 - "Scanner I"<br>(Lösung)</h3>
+	<pre><code>import java.util.Scanner;
+public class Aufgabe15 {
+    public static void main(String[] args) { 
+        Scanner scanner = new Scanner(System.in);
+        String name; 
+        int alter;
+        name = scanner.nextLine(); 
+        alter = scanner.nextInt(); 
+        System.out.println("Name: " + name); 
+        System.out.println("Alter: " + alter);
+    }
+}</code></pre>
+
+</section>
+
+<section>
+	<h2>Aufgabe 16 - "Scanner II"</h2>
+
+	<ul>
+		<li>Modifiziere das Programm aus Aufgabe 14 (Umrechner Celsius zu Fahrenheit), sodass die Temperatur in von der Tastatur eingelesen wird.</li>
+		<li>Forde den Benutzer auf die Temperatur in Celsius einzugeben.</li>
+		<li>Zur Erinnerung:</li>
+		<br>
+		<pre><code style="width:100%">class Aufgabe14 {
+    public static void main(String[] args) {
+        double celsius = 23; 
+        double fahrenheit = celsius * 2.8 + 32;
+        System.out.println("Temperatur in Fahrenheit: " + fahrenheit);
+    }
+}</code></pre>
+	</ul>
+	
+</section>
+
+<section>
+	<h2>Aufgabe 16 - "Scanner II"<br>(Lösung)</h2>
+<pre><code>import java.util.Scanner;
+class Aufgabe16 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Bitte Temperatur in Celsius eingeben!");
+        //Variable für Temperatur in Celsius 
+        double celsius = scanner.nextInt(); 
+        //Variable für Temperatur in Fahrenheit 
+        double fahrenheit = celsius * 1.8 + 32;
+        //Ausgabe des Ergebnisses auf der Konsole 
+        System.out.println("Temperatur in Fahrenheit: " + fahrenheit);
+    }
+}</code></pre>
+
+</section>
+
+<section>
+	<h2>Aufgabe 17 - "Scanner III"</h2>
+	<ul>
+		<li>Lese in einem Programm mithilfe eines Scanners fünf Integer ein.</li>
+		<li>Bilde die Summe dieser fünf Zahlen und gebe diese aus.</li>
+		<li>Benutzer so wenig variablen wie möglich!</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Aufgabe 17 - "Scanner III"<br>(Lösung)</h2>
+<pre><code class="java">import java.util.Scanner;
+class Aufgabe17 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int summe = 0;
+        System.out.println("Bitte gebe 5 Ineger in die Konsole ein!");
+        summe = summe + scanner.nextInt();
+        summe = summe + scanner.nextInt();
+        summe = summe + scanner.nextInt();
+        summe = summe + scanner.nextInt();  
+        summe = summe + scanner.nextInt();
+        System.out.println("Die Summe ist :" + summe);
+    }
+}</code></pre>
+            
+</section>
+
+

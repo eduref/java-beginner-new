@@ -1,0 +1,176 @@
+<section>
+<h1>While-Schleife</h1>
+</section>
+
+<section>
+<h2>While-Schleife</h2>
+<img style="left:0em; width:50%;" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/959409/images/5649378/image29.gif">
+</section>
+
+<section>
+	<h2>While-Schleife</h2>
+
+	<ul>
+		<li>Wir wollen die Zahlen 1 bis 50 ausgeben.</li>
+		<li>Auf herkömmliche Weise ist das viel Schreibaufwand.</li>
+		<pre class="java"><code>class WhileSchleife {
+    public static void main(String[] args) {
+        System.out.println("1"); 
+        System.out.println("2");
+        System.out.println("3");
+        System.out.println("...");
+        System.out.println("48");
+        System.out.println("49");
+        System.out.println("50");
+    }
+}</code></pre>
+	</ul>
+
+</section>
+
+<section>
+	<h2>While-Schleife</h2>
+
+	<ul>
+		<li>Dafür gibt es die While-Schleife.</li>
+		<li>Ein Code-Block der ausgeführt wird, solange eine Bedingung erfüllt ist.</li>
+		<img style="left:45%;" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/959409/images/5649389/pasted-from-clipboard.png">
+	</ul>
+
+</section>
+
+<section>
+	<h2>While-Schleife Syntax</h2>
+
+	<ul>
+		<li>Im Code sieht das folgendermaßen aus:</li>
+		<br>
+		<pre class="java"><code>while(LogischerAusdruck) {
+    //Code-Block
+}</code></pre>
+		<br>
+		<li>So funkioniert sie:</li>
+		<ol>
+			<li> Der logische Ausdruck wird überprüft.</li>
+			<li>Wenn der Ausdruck wahr ist, wird der Code-Block ausgeführt und das Programm springt zurück zum 1. Schritt.</li>
+			<li>Wenn der Ausdruck false ist, wird die while-loop beendet.</li>
+		</ol>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Aufgabe 23 - "While-Schleife I"</h2>
+
+	<ul>
+		<li>Was gibt folgender Code aus?</li>
+		<pre class="java"><code>class Aufgabe23 {
+    public static void main(String[] args) {
+        int zahl = 1;
+        
+        while(zahl &lt;= 10) {
+            System.out.println(zahl);
+            zahl++;
+        }
+    }
+}</code></pre>
+		<li>Welche Parameter haben Einfluss auf die Anzahl an Wiederholungen der Schleife?</li>
+	</ul>
+	
+</section>
+
+<section>
+	<h2>Aufgabe 23 - "While-Schleife I"<br>(Lösung)</h2>
+
+	<ul>
+		<li>Es werden die Zahlen 1 bis 10 auf der Konsole Ausgegeben.</li>
+		<pre class="java"><code>int zahl = 1;        
+while(zahl &lt;= 10) {
+    System.out.println(zahl);
+    zahl++;
+}</code></pre>
+	</ul>
+	
+	<div>
+		<svg height="40" width="12em" style="bottom:4em; left:14em" transform="rotate(0)">
+			<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+			<polygon fill="black" points="0,20 30,5 30,35"/>
+		</svg>
+		<p style="position: absolute; bottom:4.4em; left:33em; font-size:0.8em;">legt Start fest</p>
+	</div>
+	<div>
+		<svg height="40" width="10em" style="bottom:3em; left:16em" transform="rotate(0)">
+			<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+			<polygon fill="black" points="0,20 30,5 30,35"/>
+		</svg>
+		<p style="position: absolute; bottom:3.1em; left:33em; font-size:0.8em;">legt Ende fest</p>
+	</div>
+	<div>
+		<svg height="40" width="13em" style="bottom:0.75em; left:13em" transform="rotate(0)">
+			<line stroke-width="8" x1="15" y1="50%" x2="100%" y2 = "50%" stroke="black"/>			
+			<polygon fill="black" points="0,20 30,5 30,35"/>
+		</svg>
+		<p style="position: absolute; bottom:0.3em; left:33em; font-size:0.8em;">gib Schrittweite an (hier 1)</p>
+	</div>
+
+</section>
+
+<section>
+	<h2>Aufgabe 24 - "While-Schleife II"</h2>
+	
+	<ul>
+		<li>Schreibe ein Programm, das die Zahlen 1 bis 99 ausgibt.</li>
+		<li>Zur Erinnerung:</li>
+		<pre class="java"><code>class Aufgabe23 {
+    public static void main(String[] args) {
+        int zahl = 1;
+        
+        while(zahl &lt;= 10) {
+            System.out.println(zahl);
+            zahl++;
+        }
+    }
+}</code></pre>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Aufgabe 24 - "While-Schleife II"<br>(Lösung)</h2>
+
+	<pre class="java"><code>class Aufgabe24 {
+    public static void main(String[] args) {
+        int zahl = 1;
+        
+        while(zahl &lt; 100) {
+            System.out.println(zahl);
+            zahl++;
+        }
+    }
+}</code></pre>
+
+</section>
+
+<section>
+	<h2>Aufgabe 25 - "While-Schleife III"</h2>
+
+	<ul>
+		<li>Schreibe ein Programm, das die Zahlen 10 bis 100 ausgibt.</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Aufgabe 25 - "While-Schleife III"<br>(Lösung)</h2>
+
+<pre class="java"><code>class Aufgabe24 {
+    public static void main(String[] args) {
+        int zahl = 10;
+        
+        while(zahl &lt;= 100) {
+            System.out.println(zahl);
+            zahl++;
+        }
+    }
+}</code></pre>
+</section>

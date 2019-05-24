@@ -1,0 +1,311 @@
+<section>
+	<h1>Verzweigung</h1>
+</section>
+
+<section>
+	<h2>Bedingte Anweisung</h2>
+
+	<ul>
+		<li>Wir wollen, dass Anweisungen nur unter Bedingung ausgeführt werden.</li>
+		<li>Dafür benutzen wir Bedingte Anweisungen.</li>
+		<br>
+		<li>Beispiel: Wer ist älter?</li>
+		<img style="left:12em; top:0em;"data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/959409/images/5597486/pasted-from-clipboard.png">
+		<p style="left:16em; top:-4.5em;">oder</p>
+		<img style="left:19em; top:-8.2em;" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/959409/images/5597487/pasted-from-clipboard.png">
+	</ul>
+
+</section>
+
+<section>
+	<h2>Bedingte Anweisung</h2>
+
+	<ul>
+		<li>Wir haben das Alter und den Namen von zwei Personen.</li>
+	</ul>
+	
+	<svg height="11em" style="top:7.8em; left:50%">
+		<line stroke="black" stroke-width="3" x1="0" y1="0%" x2="0" y2="100%"/>
+	</svg>
+	
+	<p style="position: absolute; top:7em; left:7.9em">Vorstellung</p>
+	
+    <img style="width:13em; position: absolute; top:9em; left:4em" data-src="includes/pictures/Verzweigung1.PNG">
+
+	<p style="position: absolute; top:7em; left:30em">Im Code</p>
+    <br><br>
+	<pre style="top:6em; left:48em;" ><code style="width:35%;" class="java">int alter1 = 80;
+String name1 = Gertrud;
+
+
+int alter2 = 10;
+String name2 = Max;
+
+if (alter1 &gt; alter2) {
+      System.out.println("wahr");
+}</code></pre>
+
+</section>
+
+<section>
+
+	<h2>Aufgabe 18 - "Bedingte Anweisung"</h2>
+
+	<ul>
+		<li>Schreibe ein Programm, welches nach dem Alter von 2 Personen fragt.</li>
+		<li>Gebe "wahr" aus falls Person 1 älter als Person 2 ist.</li>
+		<br>
+		<li>Zur Erinnerung:</li>
+		<br>
+		<pre class="java"><code style="width:92%">if (Bedingung) {
+    //Code der Ausgeführt werden soll, falls Bedingung erfüllt ist
+}</code></pre>
+	</ul>
+</section>
+
+<section>
+	<h2>Aufgabe 18 - "Bedingte Anweisung"<br>(Lösung)</h2>
+
+
+	<pre class="java"><code>import java.util.Scanner;
+class Aufgabe18 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Wie alt ist Person 1?");
+        int alter1 = scanner.nextInt();
+        System.out.println("Wie alt ist Person 2?");
+        int alter2 = scanner.nextInt();
+        System.out.println("Ist Person 1 älter als Person 2?");
+        if(alter1 &gt; alter2) {
+            System.out.println("wahr");
+        }
+    }
+}</code></pre>
+
+</section>
+
+<section>
+	<h2>Verzweigung</h2>
+	
+	<ul>
+		<li>Jetzt wollen wir zusätzlich, dass Anweisungen ausgeführt werden, falls die Bedingung nicht erfüllt ist.</li>
+		<li>Dafür benutzen wir zusätzlich zu dem "if" noch ein "else".</li>
+		<li>In dieses schreiben wir die Anweisungen, welche bei nicht erfüllter Bedingung ausgeführt werden sollen.</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Verzweigung</h2>
+
+	<ul>
+		<li>Am Beispiel von vorhin sähe das folgendermaßen aus.</li>
+	</ul>
+	
+	<svg height="11em" style="top:7.8em; left:50%">
+		<line stroke="black" stroke-width="3" x1="0" y1="0%" x2="0" y2="100%"/>
+	</svg>
+	
+	<p style="position: absolute; top:7em; left:7.9em">Vorstellung</p>
+	
+    <img style="width:13em; position: absolute; top:9em; left:4em" data-src="includes/pictures/Verzweigung2.PNG">
+
+	<p style="position: absolute; top:7em; left:30em">Im Code</p>
+    <br><br>
+	<pre style="top:6em; left:48em;" ><code style="width:35%;" class="java">int alter1 = 80;
+int alter1 = 80;
+String name1 = Gertrud;
+
+int alter2 = 10;
+String name2 = Max;
+
+if (alter1 &gt; alter2) {
+    System.out.println(name1);
+} else {
+    System.out.println(name2);
+}</code></pre>
+
+</section>
+
+<section >
+	<h2>Aufgabe 19 - "Verzweigung"</h2>
+
+	<ul>
+		<li>Ändere dein Programm aus Aufgabe 18 so, dass ausgegeben wird, welche Person älter ist.</li>
+		<br>
+		<li>Zur Erinnerung:</li>
+		<br>
+		<pre class="java"><code style="width:102%;">if (Bedingung) {
+    //Code, der Ausgeführt werden soll, falls Bedingung erfüllt ist
+} else {
+    //Code, der Ausgeführt werden soll, falls Bedingung nicht erfüllt ist
+}</code></pre>
+	</ul>
+	
+</section>
+
+<section>
+	<h2>Aufgabe 19 - "Verzweigung"<br>(Lösung)</h2>
+	<pre class="java"><code>import java.util.Scanner;
+class Aufgabe19 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Wie alt ist Person 1?");
+        int alter1 = scanner.nextInt();
+        System.out.println("Wie alt ist Person 2?");
+        int alter2 = scanner.nextInt();
+        if(alter1 &gt; alter2) {
+            System.out.println("Person 1 ist älter.");
+        } else {
+            System.out.println("Person 2 ist älter.");
+        }
+    }
+}</code></pre>
+
+</section>
+
+<section>
+	<h2>Verzweigung - else if</h2>
+	<ul>
+		<li>Manchmal reichen 2 Möglichkeiten nicht aus.</li>
+		<li>In unserem Beispiel gibt es noch den fall, dass beide Personen gleich alt sind.</li>
+		<li>Um weitere fälle hinzufügen zu können nutzen wir "else if".</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Verzweigung - else if</h2>
+
+	<ul>
+		<li>Am Beispiel von vorhin sähe das folgendermaßen aus.</li>
+	</ul>
+	
+	<svg height="11em" style="top:7.8em; left:45%">
+		<line stroke="black" stroke-width="3" x1="0" y1="0%" x2="0" y2="100%"/>
+	</svg>
+	
+	<p style="position: absolute; top:7em; left:7.9em">Vorstellung</p>
+	
+    <img style="width:13em; position: absolute; top:9em; left:4em" data-src="includes/pictures/Verzweigung2.PNG">
+
+	<p style="position: absolute; top:7em; left:30em">Im Code</p>
+    <br><br>
+	<pre style="top:6em; left:42em;" ><code style="width:50%;" class="java">int alter1 = 80;
+String name1 = Gertrud;
+int alter2 = 10;
+String name2 = Max;
+if (alter1 > alter2) {
+    System.out.println(name1);
+} else if (alter1 < alter2) {
+    System.out.println(name2);
+} else {
+    System.out.println(name1 + " und " + name2 
+        + " sind gleich alt.");
+}</code></pre>
+
+</section>
+
+<section>
+	<h2>Aufgabe 20 - "Mehrfach Verzweigung I"</h2>
+	
+	<ul>
+		<li>Passe dein Programm aus Aufgabe 19 so an, dass auch Ausgegeben wird, wenn beide gleich alt sind.</li>
+		<br>
+		<li>Zur Erinnerung:</li>
+		<br>
+		<pre class="java"><code style="width:102%;">if (Bedingung1) {
+    //Code, der Ausgeführt werden soll, falls Bedingung1 erfüllt ist
+} else if (Bedingung2) {
+    //Code, der Ausgeführt werden soll, falls Bedingung2 erfüllt ist
+} else {
+    //Code, der Ausgeführt werden soll, 
+    //falls Bedingung1 nicht erfüllt ist und Bedingung2 nicht erfüllt ist
+}</code></pre>
+
+</section>
+
+			
+<section>
+	<h2>Aufgabe 20 - "Mehrfach Verzweigung I"<br>(Lösung)</h2>
+
+	<pre class="java"><code>import java.util.Scanner;
+class Aufgabe20 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Wie alt ist Person 1?");
+        int alter1 = scanner.nextInt();
+        System.out.println("Wie alt ist Person 2?");
+        int alter2 = scanner.nextInt();
+        if(alter1 &gt; alter2) {
+            System.out.println("Person 1 ist älter.");
+        } else if (alter1 &lt; alter2) {
+            System.out.println("Person 2 ist älter.");
+        } else {
+            System.out.println("Person 1 und Person 2 sind gleich alt.");
+        }
+    }
+}</code></pre>
+
+</section>
+
+<section>
+	<h2>Aufgabe 21 - "Mehrfach Verzweigung II"</h2>
+
+</section>
+
+<section>
+	<h2>Aufgabe 21 - "Mehrfach Verzweigung II"<br>(Lösung)</h2>
+
+</section>
+
+<section>
+	<h2>Verzweigung - Verschachtelt</h2>
+	<ul>
+		<li>Man kann Verzweigungen auch ineinander verschachteln.</li>
+		<li>Dafür muss man einfach eine if-Anweisung in die Klammer einer anderen schreiben.</li>
+		<pre class="java"><code style="font-size:1.1em;">if (Bedingung1) {
+    if (Bedingung2) {
+        //Code, der Ausgeführt wird, falls Bedingung1 und Bedingung2 wahr sind.
+    } else {
+        //Code, der Ausgeführt wird, falls Bedingung1 wahr und Bedingung2 falsch ist.
+    }
+} else {
+    //Code, der Ausgeführt wird, falls Bedingung1 falsch ist.
+}</code></pre>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Aufgabe 22 - "Verschachtelte Verzweigung"</h2>
+	<ul>
+		<li>Schreibe ein Programm, dass entscheidet, ob ein Kunde ins Casino darf oder nicht.</li>
+		<li>Frage ihn dafür nach seinem Alter und Bargeld.</li>
+		<li>Man darf im Casino spielen, wenn man mindestens 21 Jahre alt ist und mindestens 100 Euro Bargeld dabei hat.</li>
+		<li>Nach dem Bargeld soll nur gefragt werden, wenn der Kunde über 21 Jahre alt ist.</li>
+	</ul>
+
+</section>
+
+<section>
+	<h2>Aufgabe 22 - "Verschachtelte Verzweigung"<br>(Lösung)</h2>
+<pre class="java"><code style="font-size:1.2em;">import java.util.Scanner;
+public class Aufgabe22 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        System.out.println("Wie alt sind Sie?");
+        int alter = scanner.nextInt(); 
+        if (alter &gt;= 21) {
+            System.out.println("Wie viel Bargeld haben Sie dabei?"); 
+            double bargeld = scanner.nextDouble(); 
+            if (bargeld &gt;= 100) {
+                System.out.println("Sie dürfen ins Casino!");
+            } else {
+                System.out.println("Sie müssen leider draußen bleiben.");
+            }
+        } else {
+            System.out.println("Sie müssen leider draußen bleiben.");
+        }
+    }
+}</code></pre>
+</section>
